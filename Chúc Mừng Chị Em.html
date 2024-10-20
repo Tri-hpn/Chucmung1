@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10</title>
+    <link rel="stylesheet" href="trang trí.css">
+    <script>
+        function showSection(sectionId) {
+            // Ẩn tất cả các phần
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Hiển thị phần được chọn
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10</h1>
+        <p>🌸 Gửi tới tất cả những người phụ nữ tuyệt vời! 🌸</p>
+    </header>
+
+    <!-- Menu điều hướng -->
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('wishes')">Lời Chúc</a></li>
+            <li><a href="#" onclick="showSection('thanks')">Tri Ân</a></li>
+            <li><a href="#" onclick="showSection('gifts')">Những Món Quà</a></li>
+            <li><a href="#" onclick="showSection('footer')">Cuối cùng</a></li>
+        </ul>
+    </nav>
+
+    <!-- Nội dung các phần -->
+    <main>
+        <div id="wishes" class="section">
+            <h2>💐 Lời chúc từ trái tim 💐</h2>
+            <ul>
+                <li><span>Gửi mẹ yêu thương:</span> Mẹ là ánh sáng, là nguồn động lực vô giá trong cuộc đời con. Chúc mẹ luôn mạnh khỏe, hạnh phúc và cười tươi mỗi ngày! Con yêu mẹ nhiều lắm!</li>
+                <li><span>Gửi chị gái tuyệt vời:</span> Cảm ơn chị đã luôn ở bên, sẻ chia và dìu dắt em từng bước. Chúc chị mãi xinh đẹp, thành công và luôn là chỗ dựa vững chắc cho cả nhà.</li>
+                <li><span>Gửi em gái dễ thương:</span> Em là niềm vui, là nụ cười của anh/chị mỗi ngày. Hãy luôn giữ nụ cười ấy và tự tin vươn tới ước mơ nhé!</li>
+                <li><span>Gửi đến các cô, các dì:</span> Chúc các cô, các dì luôn tràn đầy sức sống, hạnh phúc và tiếp tục lan tỏa niềm yêu thương đến với mọi người.</li>
+            </ul>
+        </div>
+
+        <div id="thanks" class="section" style="display:none;">
+            <h2>🌟 Tri ân những người phụ nữ kiên cường 🌟</h2>
+            <p>Ngày hôm nay, không chỉ là ngày để chúc mừng mà còn là dịp để chúng ta tri ân những nỗ lực, những hy sinh thầm lặng của chị em. Từ những vai trò nhỏ bé trong gia đình đến những đóng góp lớn lao trong xã hội, các chị em phụ nữ luôn là người truyền cảm hứng và động lực cho chúng ta.</p>
+            <p>Hãy dành những điều tuyệt vời nhất cho chính mình và tận hưởng niềm hạnh phúc bên gia đình, bạn bè!</p>
+        </div>
+
+        <div id="gifts" class="section" style="display:none;">
+            <h2>🎉 Những món quà yêu thương 🎉</h2>
+            <p>Chỉ cần một bó hoa tươi thắm, một món quà nhỏ hay đơn giản là một cái ôm ấm áp cũng đủ để gửi đi thông điệp yêu thương đến chị em trong ngày này. Đừng quên gửi lời cảm ơn, trân trọng đến những người phụ nữ quanh bạn nhé!</p>
+        </div>
+
+        <div id="footer" class="section" style="display:none;">
+            <footer>
+                <p>Chúc mừng ngày Phụ nữ Việt Nam 20/10! 🌹 Chị em xứng đáng nhận được tất cả những gì tốt đẹp nhất!</p>
+            </footer>
+        </div>
+    </main>
+</body>
+</html>
